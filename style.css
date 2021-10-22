@@ -5,8 +5,9 @@ body{
 nav{
     text-align: end;
 }
-.container{
+.section1{
     display: grid;
+    grid-template-rows: 2fr 1fr;
     border-color: black;
     border-width: 2px;
     border-style: solid;
@@ -20,4 +21,7 @@ nav{
 
 footer{
     background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
 }
