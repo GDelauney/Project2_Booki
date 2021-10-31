@@ -9,7 +9,6 @@ body {
 h1 {
   font-weight: bolder;
 }
-
 h2 {
   font-weight: bolder;
 }
@@ -17,26 +16,24 @@ p{
     font-size: small;
 }
 
-Logo {
-  width: 2em;
-  height: 1em;
-}
 nav {
   text-align: end;
 }
 
-Logonav {
+.Logonav {
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
+  justify-content: space-between;
 }
 
 .Links {
   color: black;
   font-style: normal;
+  padding: 30px;
+  margin-left: 20px;
 }
 .Links a:hover {
-  padding: 30px;
+  padding-top: 20px;
   border-top-style: solid;
   border-top-color: blue;
 }
@@ -45,24 +42,28 @@ Logonav {
   background-color: white;
   border-radius: 20px;
   font-size: medium;
+  margin: 20px 20px 20px 20px;
 }
 .btn_family {
   border: 2px solid #f2f2f2;
   background-color: white;
   border-radius: 20px;
   font-size: medium;
+  margin: 20px 20px 20px 20px;
 }
 .btn_romantic {
   border: 2px solid #f2f2f2;
   background-color: white;
   border-radius: 20px;
   font-size: medium;
+  margin: 20px 20px 20px 20px;
 }
 .btn_pets {
   border: 2px solid #f2f2f2;
   background-color: white;
   border-radius: 20px;
   font-size: medium;
+  margin: 20px 20px 20px 20px;
 }
 .btn_lowcost:hover {
   background-color: blue;
@@ -84,13 +85,13 @@ Logonav {
 #Filters {
   display: flex;
   flex-direction: row;
-  margin: 20px;
+
 }
 
-Section {
+#Section1{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .Acc_container{
@@ -111,12 +112,15 @@ Section {
   flex-direction: row;
   flex-wrap: wrap;
   background-color:white;
-  justify-content: center;
-  text-align: center;
+  text-align: left;
+  margin: 5px;
   height: 225px;
   width: 240px;
   border-radius: 15px;
   padding: 5px;
+}
+.Accbox:hover{
+    box-shadow: 2px 2px 5px grey;
 }
 .Acc_title{
     width: 100%;
@@ -132,7 +136,7 @@ Section {
     margin-bottom: 10px;
 }
 .Acc_caption{
-    text-align: left;
+    margin-left: 10px;
 }
 
 .Pop_container{
@@ -143,17 +147,22 @@ Section {
   border-radius: 15px;
   width: 36%;
   height: 600px;
+  min-width: 400px;
 
 }
 #Popbox{
   background-color: white;
   border-radius: 15px;
+  margin: 5px;
   padding: 5px;
   width: 360px;
 }
+#Popbox:hover{
+    box-shadow: 2px 2px 5px grey;
+}
 .Pop_title{
     width: 100%;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 .Pop_image{
     width: 160px;
@@ -162,22 +171,64 @@ Section {
 }
 .Pop_heading{
     width: 100%;
-
 }
 .Pop_caption{
     float: right;
-    text-align: left;
+    margin-right: 45px;
 }
-img {
+/*img {
   width: 200px;
   height: 150px;
-}
+}*/
 
+.Activ_container{
+    display: flex;
+    flex-direction: row;
+}
+.Activity_container{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+}
+.Activ_heading{
+    width: 100%;
+    margin-left: 15px;
+}
+.Activbox{
+    background-color: white;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
+    height: fit-content;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 2px 5px #f2f2f2f2;
+}
+.Activbox:hover{
+    box-shadow: 2px 2px 5px grey;
+}
+.Activ_image_portrait{
+    width: 250px;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+    
+}
+.Activ_image_landscape{
+    width: 250px;
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+}
 footer {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: row;
   justify-content: stretch;
+  text-decoration: none;
+}
+#Footer_item{
+    display: flex;
+    margin-right: 60px;
+    text-decoration: none;
 }
 
 /*CORRECT*/
