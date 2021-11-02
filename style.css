@@ -15,6 +15,10 @@ h2 {
 p{
     font-size: small;
 }
+a{
+    color: black;
+    text-decoration: none;
+}
 
 nav {
   text-align: end;
@@ -35,59 +39,117 @@ nav {
 .Links a:hover {
   padding-top: 20px;
   border-top-style: solid;
-  border-top-color: blue;
+  border-top-color: #0065FC;
+  cursor: pointer;
+}
+
+.fa-map-marker-alt{
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 25% 0 0 25%;
+
+}
+.Search_input{
+    padding: 10px;
+    border-color: #f2f2f2;
+    box-shadow: none;
+}
+.Search_button{
+    color: white;
+    background-color: #0065FC;
+    border: none;
+    padding: 10px;
+    border-radius: 0 25% 25% 0;
 }
 .btn_lowcost {
   border: 2px solid #f2f2f2;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 50px;
   font-size: medium;
   margin: 20px 20px 20px 20px;
 }
 .btn_family {
   border: 2px solid #f2f2f2;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 50px;
   font-size: medium;
   margin: 20px 20px 20px 20px;
 }
 .btn_romantic {
   border: 2px solid #f2f2f2;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 50px;
   font-size: medium;
   margin: 20px 20px 20px 20px;
 }
 .btn_pets {
   border: 2px solid #f2f2f2;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 50px;
   font-size: medium;
   margin: 20px 20px 20px 20px;
 }
 .btn_lowcost:hover {
-  background-color: blue;
+  background-color: #0065FC;
   color: white;
+  cursor: pointer;
 }
 .btn_family:hover {
-  background-color: blue;
+  background-color: #0065FC;
   color: white;
+  cursor: pointer;
 }
 .btn_romantic:hover {
-  background-color: blue;
+  background-color: #0065FC;
   color: white;
+  cursor: pointer;
 }
 .btn_pets:hover {
-  background-color: blue;
+  background-color: #0065FC;
   color: white;
+  cursor: pointer;
 }
 
 #Filters {
   display: flex;
   flex-direction: row;
+  align-items: center;
 
 }
-
+.fa-money-bill-wave{
+    padding: 15px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    margin-left: -7px;
+    width: 20px;
+    height: 20px;
+}
+.fa-child{
+    padding: 15px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    margin-left: -7px;
+    width: 20px;
+    height: 20px;
+}
+.fa-heart{
+    padding: 15px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    margin-left: -7px;
+}
+.fa-dog{
+    padding: 15px;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    margin-left: -7px;
+}
+.fa-info{
+    margin: 10px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: #f2f2f2;
+}
 #Section1{
   display: flex;
   flex-direction: row;
@@ -137,6 +199,7 @@ nav {
 }
 .Acc_caption{
     margin-left: 10px;
+    line-height: 5px;
 }
 
 .Pop_container{
@@ -161,8 +224,14 @@ nav {
     box-shadow: 2px 2px 5px grey;
 }
 .Pop_title{
+    /*display: flex;
+    justify-content: space-between;*/
     width: 100%;
     margin-left: 30px;
+}
+.fa-chart-line{
+    float: right;
+    margin-right: 45px;
 }
 .Pop_image{
     width: 160px;
@@ -176,10 +245,6 @@ nav {
     float: right;
     margin-right: 45px;
 }
-/*img {
-  width: 200px;
-  height: 150px;
-}*/
 
 .Activ_container{
     display: flex;
@@ -218,6 +283,9 @@ nav {
     height: 150px;
     border-radius: 15px 15px 0 0;
 }
+
+
+
 footer {
   background-color: #f2f2f2;
   display: flex;
