@@ -12,6 +12,9 @@ h1 {
 h2 {
   font-weight: bolder;
 }
+h4 {
+    font-weight: bolder;
+}
 p{
     font-size: small;
 }
@@ -29,6 +32,19 @@ nav {
   flex-direction: row;
   justify-content: space-between;
 }
+@media only screen and (max-width: 767px) {
+    .Logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Logonav {
+        display: flex;
+        flex-direction: column;       
+        align-items: center;
+        width: fit-content;
+    }
+}
 
 .Links {
   color: black;
@@ -36,17 +52,48 @@ nav {
   padding: 30px;
   margin-right: 20px;
 }
+@media only screen and (max-width: 767px) {
+    .Links {
+        font-size: larger;
+        width: 100%;
+        margin-right: 0px;
+    }
+}
 .Acclink {
     margin-right: 10px;
 }
+@media only screen and (max-width: 767px){
+    .Acclink {
+        border-bottom-style: solid;
+        border-bottom-color: #f2f2f2;
+        width: 50%;
+        margin-right: 0px;
+    }
+}
 .Actlink {
     margin-left: 10px;
+
+}
+@media only screen and (max-width: 767px){
+    .Actlink {
+        border-bottom-style: solid;
+        border-bottom-color: #f2f2f2;
+        width: 100%;
+        margin-left: 0px;
+    }
 }
 .Links a:hover {
   padding-top: 20px;
   border-top-style: solid;
   border-top-color: #0065FC;
   cursor: pointer;
+}
+@media only screen and (max-width: 767px){
+    .Links a:hover {
+        border-bottom-style: solid;
+        border-bottom-color: #0065FC;
+        border-top-style: none;
+    }
 }
 /* SEARCH BAR */
 .fa-map-marker-alt{
@@ -70,6 +117,17 @@ nav {
     border-radius: 0 25% 25% 0;
     margin-left: -5px;
 }
+@media all and (max-width: 767px) {
+    .Search_button {
+        /*display: none;*/
+        
+    }
+}
+/* Regarding breakpoints, we agreed with the client that we would use
+992px and 768px. 992px for computer screens, 768px for tablets and
+below 768 for mobile phones  
+
+*/
 
 /*FILTERS*/
 .btn_lowcost {
@@ -124,6 +182,20 @@ nav {
     width: 160px;
     height: 50px;
 }
+@media only screen and (max-width: 767px) {
+    .btn_lowcost {
+        margin: 5px 5px 5px 30px;
+    }
+    .btn_family {
+        margin: 5px;
+    }
+    .btn_romantic {
+        margin: 5px;
+    }
+    .btn_pets {
+        margin: 5px;
+    }
+}
 .btn_lowcost:hover {
   background-color: #0065FC;
   color: white;
@@ -149,7 +221,13 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-
+}
+@media only screen and (max-width: 767px) {
+    #Filters {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 .fa-money-bill-wave{
     padding: 15px;
@@ -196,6 +274,13 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
 }
+@media only screen and (max-width: 767px) {
+    #Section1{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+}
 
 /*ACCOMMODATION*/
 .Acc_container{
@@ -209,6 +294,12 @@ nav {
   min-height: 600px;
   height: fit-content;
   max-width: 800px;
+}
+@media only screen and (max-width: 767px) {
+    .Acc_container{
+        background-color: white;
+        width: 100%;
+    }
 }
 
 .Accbox {
@@ -226,6 +317,14 @@ nav {
 .Accbox:hover{
     box-shadow: 2px 2px 5px grey;
 }
+@media all and (max-width: 767px) {
+    .Accbox {
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px grey;
+        min-width: 330px;
+        width: 100%;
+    }
+}
 .Acc_title{
     width: 100%;
     margin-left: 15px;
@@ -234,6 +333,12 @@ nav {
     width: 240px;
     height: 150px;
     border-radius: 15px 15px 0 0;
+}
+@media all and (max-width: 767px) {
+    .Acc_image {
+        min-height: 120px;
+        min-width: 325px;
+    }
 }
 .Acc_heading{
     margin-top: 5px;
@@ -253,7 +358,12 @@ nav {
   width: 36%;
   height: 610px;
   min-width: 400px;
-
+}
+@media only screen and (max-width: 767px) {
+    .Pop_container {
+        border-radius: none;
+        width: 100%;
+    }
 }
 #Popbox{
   background-color: white;
@@ -265,9 +375,12 @@ nav {
 #Popbox:hover{
     box-shadow: 2px 2px 5px grey;
 }
+@media only screen and (max-width: 767px) {
+    .Popbox {
+        width: 100%;
+    }
+}
 .Pop_title{
-    /*display: flex;
-    justify-content: space-between;*/
     width: 100%;
     margin-left: 30px;
 }
@@ -291,15 +404,25 @@ nav {
 .Activ_container{
     display: flex;
     flex-direction: row;
+    padding-bottom: 30px;
+}
+@media only screen and (max-width: 767px) {
+    .Activ_container{
+        flex-direction: column;
+        }
 }
 .Activity_container{
     display: flex;
     flex-direction: row;
     width: 500px;
+    
 }
 .Activ_heading{
     width: 100%;
     margin-left: 15px;
+}
+.Activ_caption{
+    line-height: 10px;
 }
 .Activbox1{
     background-color: white;
@@ -359,8 +482,14 @@ nav {
 }
 .Activ_image_portrait{
     width: 300px;
-    height: 400px;
+    height: 394px;
     border-radius: 15px 15px 0 0;
+}
+@media only screen and (max-width: 767px){
+    .Activ_image_portrait{
+        width: 100%;
+        height: 160px;
+    }
 }
 .Activ_image_landscape{
     width: 300px;
@@ -373,6 +502,22 @@ footer {
     background-color: #f2f2f2;
     display: flex;
     flex-direction: row;
+    width: 100%;
+}
+@media all and (max-width: 767px) {
+    footer {
+        width: fit-content;
+        justify-content: center;
+    }
+    #Footer_item {
+        flex-direction: column;
+        
+    }
+    .Footer_link {
+        
+
+    }
+    
 }
 #Footer_item{
     display: flex;
