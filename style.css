@@ -299,12 +299,16 @@ below 768 for mobile phones
   flex-direction: row;
   justify-content: space-between;
 }
-@media only screen and (max-width: 767px) {
+@media all and (max-width: 767px) {
     #Section1{
         display: flex;
         flex-direction: column-reverse;
-        
     }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  #Section1{
+    flex-direction: column-reverse;
+  }
 }
 
 /*ACCOMMODATION*/
@@ -326,6 +330,11 @@ below 768 for mobile phones
         width: 100%;
         align-content: center;
     }
+}
+@media all and (min-width: 768px) and (max-width: 991px){
+  .Acc_container{
+    width: 100%;
+  }
 }
 .Accbox {
   display: flex;
@@ -385,12 +394,10 @@ below 768 for mobile phones
   margin-left: 10px;
 }
 @media only screen and (max-width: 767px) {
-    .Pop_container {
-        border-radius: 0%;
-        width: 100%;
-        align-content: center;
-        margin-left: 0px;
-    }
+    
+}
+@media all and (min-width: 768px) and (max-width: 991px){
+ 
 }
 #Popbox{
   background-color: white;
@@ -401,11 +408,6 @@ below 768 for mobile phones
 }
 #Popbox:hover{
     box-shadow: 2px 2px 5px grey;
-}
-@media only screen and (max-width: 767px) {
-    #Popbox {
-        min-width: fit-content;
-    }
 }
 .Pop_title{
     width: 100%;
@@ -426,6 +428,46 @@ below 768 for mobile phones
 .Pop_caption{
     float: right;
     margin-right: 45px;
+}
+@media all and (max-width: 767px) {
+    #Popbox {
+        min-width: fit-content;
+    }
+    .Pop_container {
+        border-radius: 0%;
+        width: 100%;
+        align-content: center;
+        margin-left: 0px;
+    }
+}
+@media all and (min-width: 768px) and (max-width: 991px)/*TABLET*/{
+  #Popbox {
+    width: 225px;
+    height: 291px;
+  }
+  .Pop_image{
+    width: 220px;
+    border-radius: 15px 15px 15px 15px;
+  }
+  .Pop_heading{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .Pop_caption{
+    margin-left: 10px;
+    line-height: 20px;
+    float: none;
+  } 
+  .Pop_container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 5px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
 }
 /* ACTIVITIES */
 
